@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Recipes - Tastes of Africa</title>
+    <style>
+        /* Reusing the same basic styles as index.html */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .recipe-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .recipe-card {
+            border: 1px solid #ddd;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .recipe-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .ingredients-list li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .ingredients-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+        details {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .nutrition-table th, .nutrition-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .nutrition-table th {
+            background-color: #f5f5f5;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>African Recipes</h1>
+        <p>Discover Authentic African Dishes</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="regions.html">Culinary Regions</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="recipe-container">
+        <article class="recipe-card">
+            <h2><a href="recipes/jollof-rice.html">Jollof Rice</a></h2>
+            <img src="images/jollof-rice.jpg" alt="Jollof Rice" class="recipe-image">
+            <p>A beloved West African dish known for its vibrant red color and rich flavor. This one-pot rice dish is a staple at celebrations and family gatherings.</p>
+            <a href="recipes/jollof-rice.html" class="read-more">View Recipe</a>
+            
+            <details>
+                <summary>Cooking Instructions</summary>
+                <ol>
+                    <li>Blend tomatoes, red peppers, and onions to make a puree</li>
+                    <li>Heat oil in a large pot and sauté onions</li>
+                    <li>Add tomato puree and cook until reduced</li>
+                    <li>Add rice, stock, and seasonings</li>
+                    <li>Cook on low heat until rice is tender</li>
+                </ol>
+            </details>
+
+            <h3>Ingredients</h3>
+            <ul class="ingredients-list">
+                <li>2 cups long-grain rice</li>
+                <li>4 large tomatoes</li>
+                <li>2 red bell peppers</li>
+                <li>1 large onion</li>
+                <li>3 tablespoons tomato paste</li>
+                <li>2 cups chicken stock</li>
+                <li>2 tablespoons vegetable oil</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+
+            <h3>Nutritional Information</h3>
+            <table class="nutrition-table">
+                <tr>
+                    <th>Nutrient</th>
+                    <th>Amount per serving</th>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>6g</td>
+                </tr>
+                <tr>
+                    <td>Carbohydrates</td>
+                    <td>65g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>8g</td>
+                </tr>
+            </table>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jDbUg4f9EFw" 
+                    title="How to Make Jollof Rice" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="map-container">
+                <h3>Origin: Nigeria</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=placeholder" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <h2><a href="recipes/injera.html">Injera</a></h2>
+            <img src="images/injera.jpg" alt="Injera" class="recipe-image">
+            <p>A traditional Ethiopian flatbread with a unique spongy texture and slightly sour taste. This staple food is used as both a plate and utensil in Ethiopian cuisine.</p>
+            <a href="recipes/injera.html" class="read-more">View Recipe</a>
+            
+            <details>
+                <summary>Cooking Instructions</summary>
+                <ol>
+                    <li>Mix teff flour with water to create a batter</li>
+                    <li>Allow the batter to ferment for 2-3 days</li>
+                    <li>Heat a large flat pan or griddle</li>
+                    <li>Pour the batter in a circular motion</li>
+                    <li>Cook until bubbles form and the edges lift</li>
+                </ol>
+            </details>
+
+            <h3>Ingredients</h3>
+            <ul class="ingredients-list">
+                <li>2 cups teff flour</li>
+                <li>3 cups water</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/4 teaspoon baking soda (optional)</li>
+            </ul>
+
+            <h3>Nutritional Information</h3>
+            <table class="nutrition-table">
+                <tr>
+                    <th>Nutrient</th>
+                    <th>Amount per serving</th>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>4g</td>
+                </tr>
+                <tr>
+                    <td>Carbohydrates</td>
+                    <td>25g</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>1g</td>
+                </tr>
+            </table>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HacFKtsVihA" 
+                    title="How to Make Injera" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="map-container">
+                <h3>Origin: Ethiopia</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=placeholder" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </article>
+
+        <article class="recipe-card">
+            <h2><a href="recipes/tagine.html">Tagine</a></h2>
+            <img src="images/tagine.jpg" alt="Tagine" class="recipe-image">
+            <p>A North African slow-cooked stew named after the earthenware pot it's cooked in. This aromatic dish combines tender meat, vegetables, and fragrant spices.</p>
+            <a href="recipes/tagine.html" class="read-more">View Recipe</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tastes of Africa. All rights reserved.</p>
+        <form class="newsletter">
+            <label for="email">Subscribe to our newsletter:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+</body>
+</html> 

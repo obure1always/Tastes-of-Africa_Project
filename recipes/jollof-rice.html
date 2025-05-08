@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollof Rice Recipe - Tastes of Africa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .recipe-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .recipe-image {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1rem auto;
+            display: block;
+        }
+        .recipe-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        .ingredients-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .ingredients-list li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .ingredients-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+        details {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .nutrition-table th, .nutrition-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .nutrition-table th {
+            background-color: #f5f5f5;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 8px;
+        }
+        .map-container {
+            margin: 2rem 0;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jollof Rice</h1>
+        <p>A West African Culinary Masterpiece</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../recipes.html">All Recipes</a>
+        <a href="../regions.html">Culinary Regions</a>
+        <a href="../about.html">About Us</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <main class="recipe-container">
+        <div class="recipe-header">
+            <img src="../images/jollof-rice.jpg" alt="Jollof Rice" class="recipe-image">
+            <h2>The King of West African Cuisine</h2>
+            <p>Jollof Rice is more than just a dish - it's a cultural phenomenon that brings together communities across West Africa. This vibrant, tomato-based rice dish is a staple at celebrations, family gatherings, and everyday meals. Each country has its own variation, but the essence remains the same: a perfect blend of rice, tomatoes, and aromatic spices.</p>
+        </div>
+
+        <div class="recipe-content">
+            <div class="main-content">
+                <details>
+                    <summary>Cooking Instructions</summary>
+                    <ol>
+                        <li>Blend tomatoes, red peppers, and onions to make a smooth puree</li>
+                        <li>Heat oil in a large pot and sauté onions until translucent</li>
+                        <li>Add tomato puree and cook until reduced and darkened (about 10-15 minutes)</li>
+                        <li>Add tomato paste, thyme, curry powder, and bay leaves</li>
+                        <li>Pour in chicken stock and bring to a boil</li>
+                        <li>Add washed rice and stir to combine</li>
+                        <li>Reduce heat to low, cover, and cook for 20-25 minutes</li>
+                        <li>Let rest for 5 minutes before serving</li>
+                    </ol>
+                </details>
+
+                <h3>Ingredients</h3>
+                <ul class="ingredients-list">
+                    <li>2 cups long-grain rice</li>
+                    <li>4 large tomatoes</li>
+                    <li>2 red bell peppers</li>
+                    <li>1 large onion</li>
+                    <li>3 tablespoons tomato paste</li>
+                    <li>2 cups chicken stock</li>
+                    <li>2 tablespoons vegetable oil</li>
+                    <li>1 teaspoon thyme</li>
+                    <li>1 teaspoon curry powder</li>
+                    <li>2 bay leaves</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jDbUg4f9EFw" 
+                        title="How to Make Jollof Rice" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h3>Nutritional Information</h3>
+                <table class="nutrition-table">
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount per serving</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>6g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohydrates</td>
+                        <td>65g</td>
+                    </tr>
+                    <tr>
+                        <td>Fat</td>
+                        <td>8g</td>
+                    </tr>
+                    <tr>
+                        <td>Fiber</td>
+                        <td>3g</td>
+                    </tr>
+                    <tr>
+                        <td>Sodium</td>
+                        <td>450mg</td>
+                    </tr>
+                </table>
+
+                <div class="map-container">
+                    <h3>Origin: Nigeria</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.8654455275!2d3.3366545!3d6.5480555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tastes of Africa. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
