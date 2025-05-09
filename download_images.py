@@ -8,6 +8,7 @@ images_dir.mkdir(exist_ok=True)
 
 # Image URLs and their local filenames
 images = {
+    "hero-african-cuisine.jpg": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
     "jollof-rice.jpg": "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
     "injera.jpg": "https://images.unsplash.com/photo-1563245372-f21724e3856d",
     "tagine.jpg": "https://images.unsplash.com/photo-1563245372-f21724e3856d",
